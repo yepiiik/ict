@@ -2,18 +2,22 @@
 #define LIST_H
 
 template <typename T>
+class Node;
+
+template <typename T>
+class Iterator;
+
+template <typename T>
 class List {
     Node<T>* firstElemnt;
     Node<T>* lastElement;
     Iterator<T> iterator;
 public:
-    List() :
-        firstElemnt(nullptr),
-        lastElement(nullptr),
-        iterator(Iterator(firstElemnt))
-    {}
+    List();
 
-    T* find(T& target);
+    List<T>* push(T value);
+    List<T>* pop();
+    T* find(T target);
 };
 
 #endif
