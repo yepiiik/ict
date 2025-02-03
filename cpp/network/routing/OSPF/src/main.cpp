@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "../../../network/devices/L3Device.h"
-#include "../../../network/routing/OSPF/include/OSPF.h"
+#include "../../../devices/L3Device.h"
+#include "../include/OSPF.h"
 
 int main() {
     L3Device router;
-    router.configureRoutingProtocol(OSPF(&router));
+    // router.configureRoutingProtocol(OSPF(&router));
 
     return 0;
 }

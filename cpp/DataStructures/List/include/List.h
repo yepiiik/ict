@@ -11,7 +11,7 @@ template <typename T>
 class List {
     Node<T>* firstElemnt;
     Node<T>* lastElement;
-    Iterator<T> iterator;
+    Iterator<T>* iterator;
 public:
     List();
 

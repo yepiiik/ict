@@ -6,17 +6,17 @@ template <typename T>
 List<T>::List() :
     firstElemnt(nullptr),
     lastElement(nullptr),
-    iterator(Iterator(firstElemnt))
+    iterator(new Iterator(firstElemnt))
 {}
 
 template <typename T>
 T* List<T>::find(T target) {
     T* resultPtr = nullptr;
     do {
-        if (iterator.currentNode->value == target) {
-            resultPtr = &(iterator.currentNode->value);
+        if (iterator->currentNode->value == target) {
+            resultPtr = &(iterator->currentNode->value);
         }
-    } while (iterator.next());
+    } while (iterator->next());
     return resultPtr;
 }
 

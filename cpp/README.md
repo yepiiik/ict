@@ -2,6 +2,30 @@
 
 This folder contains different implementation of ICT using C++.
 
+## Project structure:
+
+```
+cpp
+├───dataStructures
+│   ├───AVL
+│   │   ├───include
+│   │   └───src
+│   └───list
+│       ├───include
+│       └───src
+└───network
+    ├───devices
+    │   ├───include
+    │   └───src
+    └───routing
+        ├───modelOSI
+        │   ├───include
+        │   └───src
+        └───OSPF
+            ├───include
+            └───src
+```
+
 ### dataStructures folder:
 
 Contains implementation of various data structures from scratch that are used in other technologies.

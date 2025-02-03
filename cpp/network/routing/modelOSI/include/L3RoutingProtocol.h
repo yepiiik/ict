@@ -9,10 +9,4 @@ public:
     L3RoutingProtocol(L3Device* device = nullptr);    
 };
 
-L3RoutingProtocol::L3RoutingProtocol(
-    L3Device* device
-) :  
-    device(device)
-{}
-
 #endif
